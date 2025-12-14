@@ -57359,5 +57359,18 @@
         // Открываем первую вкладку при загрузке
         document.getElementsByClassName("tablinks")[0].click();
     </script>
+function openModal(src) {
+  var modal = document.createElement('div');
+  modal.className = 'modal';
+
+  modal.innerHTML =
+    '<span class="close">&times;</span>' +
+    '<img src="' + src + '" style="max-width:90vw; max-height:90vh; object-fit:contain;">';
+
+  document.body.appendChild(modal);
+  modal.style.display = 'block';
+}
+</script>
+
 </body>
 </html>
